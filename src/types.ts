@@ -5,6 +5,7 @@ export interface Project {
   tech: string[];
   isOngoing?: boolean;
   year?: number;
+  metadata?:any;
 }
 
 export interface Experience {
