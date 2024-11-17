@@ -10,7 +10,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <header className="relative bg-background overflow-hidden">
+    <header id="home" className="relative bg-background overflow-hidden">
       {/* Animated gradient background */}
       <div
         className="absolute inset-0 z-0"

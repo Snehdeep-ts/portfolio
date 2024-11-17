@@ -9,16 +9,18 @@ import { Languages } from '../components/Languages';
 import { Footer } from '../components/Footer';
 import { projects, skills } from '../data';
 import CasualAbout from '@/components/CasualAbout';
+import Navbar from '@/components/Navbar';
 
 const Portfolio = () => {
   return (
     <div className="min-h-screen bg-gray-50">
+      <Navbar />
       <Hero />
       <About />
-      <Experience  />
+      <Experience />
       <Projects projects={projects} />
       <SkillsSection skills={skills} />
-      <CasualAbout/>
+      <CasualAbout />
       <Education />
       <Languages />
       <Footer />

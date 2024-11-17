@@ -17,9 +17,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
     <div
       ref={ref}
       className={`group relative h-full cursor-pointer transform transition-all duration-700 ${
-        isInView 
-          ? 'opacity-100 translate-y-0' 
-          : 'opacity-0 translate-y-16'
+        isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'
       }`}
       onClick={() => window.open(project.link, '_blank', 'noopener,noreferrer')}
     >
@@ -31,7 +29,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
               <span className="absolute left-0 -bottom-0.5 h-[2px] w-0 bg-blue-600 group-hover:w-full transition-all duration-150 ease-out" />
             </span>
           </h3>
-          <a 
+          <a
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
@@ -59,7 +57,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
             </span>
           </div>
         )}
-        
+
         <div className="absolute inset-0 rounded-lg ring-1 ring-black/5 group-hover:ring-blue-100 transition-all duration-150" />
       </div>
     </div>
@@ -67,9 +65,11 @@ const ProjectCard = ({ project }: { project: Project }) => {
 };
 
 export const Projects = ({ projects }: ProjectsProps) => (
-  <section className="py-16 bg-white">
+  <section id="projects" className="py-16 bg-white">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 className="text-3xl font-bold text-gray-900 mb-8">Featured Projects</h2>
+      <h2 className="text-3xl font-bold text-gray-900 mb-8">
+        Featured Projects
+      </h2>
       <div className="grid gap-8 md:grid-cols-2">
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} />

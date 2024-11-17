@@ -38,6 +38,7 @@ export const About = () => {
     <section
       className="py-16 bg-white relative overflow-hidden"
       ref={sectionRef}
+      id="about"
     >
       <div
         className="absolute inset-0 opacity-5"

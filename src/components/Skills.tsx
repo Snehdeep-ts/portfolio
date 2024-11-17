@@ -34,18 +34,16 @@ const SkillCategory = ({ title, skills, delay }: SkillCategoryProps) => {
   });
 
   return (
-    <div 
+    <div
       ref={ref as MutableRefObject<null>}
       className={`mb-8 transform transition-all duration-700 ease-out`}
       style={{
         opacity: isInView ? 1 : 0,
         transform: isInView ? 'translateY(0)' : 'translateY(20px)',
-        transitionDelay: `${delay}ms`
+        transitionDelay: `${delay}ms`,
       }}
     >
-      <h3 className="text-xl font-semibold mb-4 text-[#0b1442]/90">
-        {title}
-      </h3>
+      <h3 className="text-xl font-semibold mb-4 text-[#0b1442]/90">{title}</h3>
       <div className="flex flex-wrap gap-2">
         {skills.map((skill, index) => (
           <a
@@ -57,7 +55,7 @@ const SkillCategory = ({ title, skills, delay }: SkillCategoryProps) => {
             style={{
               opacity: isInView ? 1 : 0,
               transform: isInView ? 'translateY(0)' : 'translateY(10px)',
-              transitionDelay: `${delay + 400 + index * 50}ms`
+              transitionDelay: `${delay + 400 + index * 50}ms`,
             }}
           >
             <span className="relative z-10 flex items-center gap-1">
@@ -65,15 +63,16 @@ const SkillCategory = ({ title, skills, delay }: SkillCategoryProps) => {
                 {skill.name}
                 <span className="absolute left-0 -bottom-px w-full h-px bg-gray-800 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
               </span>
-              <span 
-                className="text-xs text-gray-400 transform transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-              >
+              <span className="text-xs text-gray-400 transform transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
                 ↗
               </span>
             </span>
-            
+
             {/* Border gradient */}
-            <span className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-200 to-indigo-200 opacity-0 group-hover:opacity-100 transition-opacity duration-200" style={{ padding: '1px' }}>
+            <span
+              className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-200 to-indigo-200 opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+              style={{ padding: '1px' }}
+            >
               <span className="absolute inset-0 rounded-full bg-white" />
             </span>
           </a>
@@ -89,38 +88,75 @@ export const SkillsSection = ({ skills }: SkillsProps) => {
   });
 
   return (
-    <section ref={ref as MutableRefObject<null>} className="py-16 bg-gray-50 relative overflow-hidden">
+    <section
+      id="skills"
+      ref={ref as MutableRefObject<null>}
+      className="py-16 bg-gray-50 relative overflow-hidden"
+    >
       {/* Background Pattern */}
-      <div 
+      <div
         className="absolute inset-0 opacity-5"
         style={{
-          backgroundImage: 'radial-gradient(circle at 1px 1px, #6366f1 1px, transparent 0)',
+          backgroundImage:
+            'radial-gradient(circle at 1px 1px, #6366f1 1px, transparent 0)',
           backgroundSize: '40px 40px',
           opacity: isInView ? 0.05 : 0,
-          transition: 'opacity 1s ease-out'
+          transition: 'opacity 1s ease-out',
         }}
       />
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <h2 
+        <h2
           className="text-3xl font-bold text-[#0b1442]/90 mb-12"
           style={{
             opacity: isInView ? 1 : 0,
             transform: isInView ? 'translateY(0)' : 'translateY(20px)',
-            transition: 'all 0.7s ease-out'
+            transition: 'all 0.7s ease-out',
           }}
         >
           Skills & Expertise
         </h2>
         <div className="grid gap-x-12 gap-y-8 md:grid-cols-2">
-          <SkillCategory title="Programming Languages" skills={skills.programming} delay={0} />
-          <SkillCategory title="Frontend Development" skills={skills.frontend} delay={100} />
-          <SkillCategory title="Design & Styling" skills={skills.styling} delay={200} />
-          <SkillCategory title="Backend Development" skills={skills.backend} delay={300} />
-          <SkillCategory title="Database & Storage" skills={skills.database} delay={400} />
-          <SkillCategory title="Cloud & DevOps" skills={skills.deployment} delay={500} />
-          <SkillCategory title="Testing & Quality" skills={skills.testing} delay={600} />
-          <SkillCategory title="Architecture & Patterns" skills={skills.architecture} delay={700} />
+          <SkillCategory
+            title="Programming Languages"
+            skills={skills.programming}
+            delay={0}
+          />
+          <SkillCategory
+            title="Frontend Development"
+            skills={skills.frontend}
+            delay={100}
+          />
+          <SkillCategory
+            title="Design & Styling"
+            skills={skills.styling}
+            delay={200}
+          />
+          <SkillCategory
+            title="Backend Development"
+            skills={skills.backend}
+            delay={300}
+          />
+          <SkillCategory
+            title="Database & Storage"
+            skills={skills.database}
+            delay={400}
+          />
+          <SkillCategory
+            title="Cloud & DevOps"
+            skills={skills.deployment}
+            delay={500}
+          />
+          <SkillCategory
+            title="Testing & Quality"
+            skills={skills.testing}
+            delay={600}
+          />
+          <SkillCategory
+            title="Architecture & Patterns"
+            skills={skills.architecture}
+            delay={700}
+          />
         </div>
       </div>
     </section>
