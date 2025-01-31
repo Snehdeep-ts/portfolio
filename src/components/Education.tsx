@@ -1,6 +1,5 @@
 import { education } from '@/data';
 import { useInView } from '@/hooks/useInView';
-import { GraduationCap } from 'lucide-react';
 
 export const Education = () => {
   const [sectionRef, isSectionInView] = useInView({
