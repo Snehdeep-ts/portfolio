@@ -1,5 +1,21 @@
 import { Car, Bike, Music, Radio, Rocket, Film } from 'lucide-react';
 
+export const education = [
+  {
+    degree: 'Credit-Linked Program, Data Science',
+    institution: 'Indian Institute of Technology',
+    period: 'Jan 2025 - Nov 2025',
+    location: 'Guwahati',
+    logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/1/12/IIT_Guwahati_Logo.svg/440px-IIT_Guwahati_Logo.svg.png',
+  },
+  {
+    degree: 'Bachelor of Technology, Computer Science & Engineering',
+    institution: 'SRM IST',
+    period: '2017 - 2021',
+    location: 'Chennai',
+    logo: 'https://upload.wikimedia.org/wikipedia/en/f/fe/Srmseal.png',
+  },
+];
 export const projects = [
   {
     title: 'QuickLearn',
@@ -147,16 +163,6 @@ export const experiences = [
       "Mastered the art of turning business requirements into digital experiences while making e-commerce platforms feel like magic. Collaborated across time zones with the enthusiasm of a morning person (fueled by coffee). Learned that the best code is written when you understand the 'why' behind the 'what'.",
     companyUrl: 'https://www.cognizant.com/in/en',
     linkedinUrl: 'https://www.linkedin.com/company/cognizant/',
-  },
-  {
-    company: 'GTB Infotech',
-    role: 'Software Developer Intern',
-    period: 'Sept 2020 - Dec 2020',
-    location: 'Jalandhar',
-    description:
-      "Started the journey from 'Hello World' to 'World, I'm ready to make a difference!' Discovered that coding is an art form and debugging is like being a detective in a mystery novel. Learned that the best features come from understanding user stories, not just user requirements.",
-    companyUrl: 'https://www.gtbinfotech.com/',
-    linkedinUrl: 'https://www.linkedin.com/company/gtbinfotech/',
   },
 ];
 
