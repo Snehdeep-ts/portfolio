@@ -1,4 +1,4 @@
-import { Mail, Phone, Github, Linkedin } from 'lucide-react';
+import { Mail, Github, Linkedin } from 'lucide-react';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
@@ -129,12 +129,6 @@ export const Hero = () => {
                 icon: Mail,
                 text: 'singhsnehdeep99@gmail.com',
                 delay: 400,
-              },
-              {
-                href: 'tel:+917009928716',
-                icon: Phone,
-                text: '+91 7009928716',
-                delay: 500,
               },
               {
                 href: 'https://github.com/Snehdeep-ts',
