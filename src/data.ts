@@ -133,11 +133,20 @@ export const projects = [
   },
 ];
 
-export const experiences = [
+export const experiences = [{
+  company: 'Trajector',
+  role: 'Senior Software Engineer',
+  period: 'Feb 2025 - Present',
+  location: 'Gurugram, Haryana, India (Hybrid)',
+  description:
+    "Building and maintaining web platforms while ensuring seamless integration into Trajector's core ecosystem. Juggling new development and legacy system maintenance like a tech ninja—modernizing the old, crafting the new, and making everything work in harmony.",
+    companyUrl: 'https://www.trajector.com/',
+    linkedinUrl: 'https://www.linkedin.com/company/trajector-us',
+ },
   {
     company: 'Crownstack Technologies',
     role: 'Sr. Software Engineer',
-    period: 'Feb 2024 - Present',
+    period: 'Feb 2024 - Feb 2025',
     location: 'Noida',
     description:
       "Orchestrating beautiful code symphonies while conducting multiple development teams. Known as the 'Code Whisperer' for turning business requirements into elegant technical solutions. Mentoring junior developers with the patience of a Zen master and the enthusiasm of a caffeine-powered rubber duck. Building bridges between technical possibilities and business dreams.",
